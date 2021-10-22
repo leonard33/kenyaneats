@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Text, SafeAreaView, ScrollView } from 'react-native'
 import Categories from '../Components/Categories';
 import HeaderTabs from '../Components/HeaderTabs'
-import RestaurantItem from '../Components/RestaurantItem';
+import RestaurantItems, { localRestaurant } from '../Components/RestaurantItems';
 import SearchBar from '../Components/SearchBar';
 
 export default function Home() {
+     const [restaurantData , setrestaurantData] = React.useState(localRestaurant);
+
     return (
      <SafeAreaView style={{backgroundColor:"#eee",flex:1}}>
          <View  style={{backgroundColor:"white", padding:15}}>
@@ -14,7 +16,7 @@ export default function Home() {
            </View>
            <ScrollView showsVerticalScrollIndicator={false}>
            <Categories/>
-           <RestaurantItem/>
+           <RestaurantItems restaurantData={restaurantData}/>
            </ScrollView>
      </SafeAreaView>
 
