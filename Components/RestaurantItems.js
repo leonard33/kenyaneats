@@ -36,6 +36,14 @@ export const localRestaurant=[
         reviews:"1244",
         ratings:"3.5",
     },
+    {
+        name:"Fish Planet Diani",
+        image_url:"https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2019/01/Trout-Tree-Restaurant.jpg",
+        categories:["Swahili"],
+        price:"Ksh",
+        reviews:"1244",
+        ratings:"3.5",
+    },
 ];
 
 export default function RestaurantItems(props) {

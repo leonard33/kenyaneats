@@ -12,7 +12,7 @@ const items = [
         text: "Soft Drinks"
     },
     {
-        image: require("../assets/images/cakes.jpg"),
+        image: require("../assets/images/backery3.jpg"),
         text: "Backery Items"
     },
     {

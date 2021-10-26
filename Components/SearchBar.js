@@ -7,7 +7,10 @@ import AntDesign from 'react-native-vector-icons/AntDesign'
 export default function SearchBar() {
     return (
         <View style={{marginTop:15, flexDirection:"row"}}>
-            <GooglePlacesAutocomplete placeholder= "Search" 
+            <GooglePlacesAutocomplete 
+           // query={{key:"AIzaSyD26wRvHk9D3AgpBWs334nXxF7MKh5dFUQ"}}
+          
+            placeholder= "Search" 
             styles={{
                 textInput:{
                 backgroundColor:"#eee",
