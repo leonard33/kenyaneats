@@ -51,10 +51,11 @@ export default function RestaurantItems(props) {
         <TouchableOpacity activeOpacity={1} style={{marginBottom:30}} >
             {props.restaurantData.map((restaurant, index)=>(
         <View key={index}
-                   style={{marginTop:10, padding:15, backgroundColor:"white"}} >
+                  style={{marginTop:10, padding:15, backgroundColor:"white"}} >
             <RestaurantImage image= {restaurant.image_url}/>
             <RestaurantInfo name={restaurant.name} ratings={restaurant.ratings} />
         </View>
+    
         ))}
         </TouchableOpacity>
     );

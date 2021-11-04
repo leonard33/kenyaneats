@@ -20,7 +20,7 @@ const HeaderButton = (props) => (
                           paddingVertical:6, 
                          paddingHorizontal:16,
                          borderRadius:30,
-                         marginTop: 20,
+                         marginTop: 30,
                          }}
                          onPress={()=> props.setActiveTab(props.text)}
                          >
